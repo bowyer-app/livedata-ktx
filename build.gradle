@@ -36,41 +36,15 @@ buildscript {
             versionCode      : 1,
             versionName      : '3.0.0'
         ]
-
-        bintray = [
-            bintrayOrg        : 'shopify',
-            bintrayRepo       : 'shopify-android',
-            bintrayName       : 'livedata-ktx',
-
-            publishedGroupId  : 'com.shopify',
-            libraryName       : 'LiveDataKtx',
-            artifact          : 'livedata-ktx',
-
-            libraryDescription: 'Kotlin extension for LiveData, chaining like RxJava',
-
-            siteUrl           : 'https://github.com/shopify/livedata-ktx',
-            gitUrl            : 'https://github.com/shopify/livedata-ktx',
-
-            libraryVersion    : rootProject.ext.android.versionName,
-
-            developerId       : 'shopify',
-            developerName     : 'Shpoify',
-            developerEmail    : 'henry.tao@shopify.com',
-
-            licenseName       : 'MIT',
-            licenseUrl        : 'https://raw.githubusercontent.com/Shopify/livedata-ktx/master/LICENSE',
-            allLicenses       : ['MIT']
-        ]
     }
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.0'
         classpath "org.jetbrains.dokka:dokka-gradle-plugin:0.9.16"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
     }
 }
@@ -78,7 +52,7 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 

@@ -67,5 +67,3 @@ task dokkaJavadoc(type: org.jetbrains.dokka.gradle.DokkaTask) {
 tasks.withType(Javadoc) {
     enabled = false
 }
-
-apply from: '../bintray.gradle'

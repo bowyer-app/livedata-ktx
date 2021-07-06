@@ -26,16 +26,19 @@ val liveData = MutableLiveDataKtx<Boolean?>()
 liveData.value = null
 ```
 
-[README For 1.x](https://github.com/Shopify/livedata-ktx/blob/master/README.1.x.mdx)
-
 [README For 2.x](https://github.com/Shopify/livedata-ktx/blob/master/README.2.x.mdx)
+
+# Release
+```
+./gradlew assembleRelease
+```
 
 # Getting Started
 
-To add LiveData KTX to your project, add the following to your app module's build.gradle:
+You can download from release tag
 
-```groovy
-implementation "com.shopify:livedata-ktx:VERSION"
+```
+https://github.com/bowyer-app/livedata-ktx/releases/tag/2.0.2
 ```
 
 # Usage
